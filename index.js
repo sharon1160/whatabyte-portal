@@ -24,8 +24,8 @@ app.set("view engine", "pug");
 * Routes Definitions
 */
 
-app.get("/", (req,res) => {
-    res.status(200).send("WHATABYTE: Food For Devs :)");
+app.get("/", (req, res) => {
+    res.render("index", {title: "Home"});
 });
 
 /**
